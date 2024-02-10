@@ -24,6 +24,7 @@
   font-weight: 600;
   font-size: 3.8rem;
   line-height: 4rem;
+  margin-bottom: 2rem;
 }
 
 .orange-circle {
@@ -68,6 +69,8 @@
   padding: 0.5rem 1rem;
   width: 100%;
   justify-content: space-between;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
 }
 
 .search-bar > input {
@@ -83,26 +86,4 @@
 }
 .stat > :nth-child(1) > :last-child {
   color: orange;
-}
-
-/* mobile screens */
-@media (max-width: 640px) {
-  .hero-container {
-    margin-top: 2rem;
-  }
-  .hero-title > h1 {
-    font-size: 2.5rem;
-    line-height: 3rem;
-  }
-  .stats {
-    justify-content: center;
-    gap: 1.5rem;
-    font-weight: wrap;
-  }
-  .stat > :nth-child(1) {
-    font-size: 1.5rem;
-  }
-  .stat > :nth-child(2) {
-    font-size: 0.8rem;
-  }
 }
