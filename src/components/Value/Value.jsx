@@ -26,7 +26,7 @@ const Value = () => {
         <div className="flexColStart v-right">
           <span className="orangeText">Our Value</span>
           <span className="primaryText">
-            We always ready to help by providijng the best services for you.
+            We always ready to help by providing the best services for you.
           </span>
           <span className="secondaryText">
             We beleive a good blace to live can make your life better
