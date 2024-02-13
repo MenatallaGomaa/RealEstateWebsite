@@ -8,13 +8,17 @@ import {
   AccordionItemState,
 } from "react-accessible-accordion";
 import "react-accessible-accordion/dist/fancy-example.css";
-import { MdOutlineArrowDropDown } from "react-icons/md";
+import {
+  MdOutlineArrowDropDown,
+  MdOutlineArrowDropDownCircle,
+} from "react-icons/md";
+import data from "../../utils/accordion.jsx";
 import "./Value.css";
-import data from "../../utils/accordion";
+// Demo styles, see 'Styles' section below for some notes on use.
 
 const Value = () => {
   return (
-    <section className="v-wrapper">
+    <section id="value" className="v-wrapper">
       <div className="paddings innerWidth flexCenter v-container">
         {/* left side */}
         <div className="v-left">
@@ -22,13 +26,16 @@ const Value = () => {
             <img src="./value.png" alt="" />
           </div>
         </div>
-        {/* right side */}
+
+        {/* right */}
         <div className="flexColStart v-right">
           <span className="orangeText">Our Value</span>
-          <span className="primaryText">
-            We always ready to help by providing the best services for you.
-          </span>
+
+          <span className="primaryText">Value We Give to You</span>
+
           <span className="secondaryText">
+            We always ready to help by providijng the best services for you.
+            <br />
             We beleive a good blace to live can make your life better
           </span>
 
@@ -39,15 +46,15 @@ const Value = () => {
           >
             {data.map((item, i) => {
               const [className, setClassName] = useState(null);
-
               return (
                 <AccordionItem
                   className={`accordionItem ${className}`}
-                  key={i}
                   uuid={i}
+                  key={i}
                 >
                   <AccordionItemHeading>
-                    <AccordionItemButton className="flexCenter accordionButton">
+                    <AccordionItemButton className="flexCenter accordionButton ">
+                      {/* just for getting state of item */}
                       <AccordionItemState>
                         {({ expanded }) =>
                           expanded
